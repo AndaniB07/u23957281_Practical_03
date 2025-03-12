@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Consult";
+}
+
+<h2>Book a consultation with your Lecturer.</h2>
+<br />
+
+<form action="/action_page.php" class="was-validated">
+
+    <h3>Your details</h3>
+    
+    <div class="row">
+        <div class="col">
+            <label for="FirstName" class="form-labrl">First Name</label>
+            <input type="text" class="form-control" placeholder="Enter First Name" name="FirstName" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="col">
+            <label for="LastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" placeholder="Enter Last Name" name="LastName" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>   
+    </div>
+
+    <div class="col-sm-8">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+    <div>
+        <label for="comment">Comments:</label>
+        <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
